@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Pacifico&display=swap");
+body {
+  background-color: #faefef;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav .menu-btn {
+  display: none;
+}
+nav #menu-section {
+  display: none;
+}
+nav .container-fluid {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container-fluid .logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+}
+nav .container-fluid .logo img {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+nav .container-fluid .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+nav .container-fluid .navbar-nav .nav-item {
+  padding: 0.8rem;
+}
+nav .container-fluid .navbar-nav .nav-item svg {
+  width: 2rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+nav .container-fluid .navbar-nav .nav-item svg:hover {
+  width: 3rem;
+}
+nav .container-fluid .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", sans-serif;
+  color: #363636;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+}
+nav .container-fluid .navbar-nav .nav-item .nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+nav .container-fluid .navbar-nav .nav-item .nav-link:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+nav .container-fluid .languages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100px;
+}
+nav .container-fluid .languages svg {
+  width: 2rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+nav .container-fluid .languages svg:hover {
+  width: 3rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  background-color: #0e0e0e;
+}
+.hero .grid-container {
+  color: #faefef;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  gap: 10rem;
+}
+.hero .grid-container .image-container {
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hero .grid-container .image-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.hero .grid-container .flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  gap: 4rem;
+  padding: 60px;
+}
+.hero .grid-container .flex-container h1 {
+  font-family: "Pacifico";
+  color: hsl(356, 76%, 33%);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.hero .grid-container .menu-btn {
+  background-color: #0e0e0e;
+  color: #faefef;
+  border: 10px solid hsl(356, 76%, 33%);
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-radius: 50px;
+  /* Increased border-radius for a more rounded, modern look */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Added transition for a smooth hover effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  /* Added box-shadow for a 3D effect */
+  outline: none;
+  /* Removed outline for a cleaner look when the button is clicked */
+}
+.hero .grid-container .menu-btn a {
+  color: #faefef;
+  text-decoration: none;
+}
+.hero .grid-container .menu-btn:hover {
+  background-color: #7b241b;
+  transform: scale(1.05);
+  /* Slightly increase the size of the button on hover */
+  box-shadow: 0px 15px 20px rgba(255, 106, 106, 0.2);
+  /* Increase box-shadow on hover for a more pronounced 3D effect */
+}
+.hero .grid-container .menu-btn:active {
+  transform: scale(0.95);
+  /* Slightly decrease the size of the button when clicked */
+}
+
+.gallery .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+.gallery .grid-container .container {
+  overflow: hidden;
+  max-height: 300px;
+}
+.gallery .grid-container .container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.gallery .grid-container .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.gallery .grid-container .text .bold {
+  font-weight: 600;
+}
+.gallery .grid-container .text h1 {
+  font-family: "Pacifico";
+  color: hsl(356, 76%, 33%);
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+}
+.contact h1 {
+  font-family: "Pacifico";
+  color: hsl(356, 76%, 33%);
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact .bold {
+  font-weight: 600;
+}
+
+footer {
+  background-color: #faefef;
+  color: #0e0e0e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .footer-container li {
+  list-style: none;
+}
+footer .footer-container li a {
+  color: #0e0e0e;
+  text-decoration: none;
+}
+footer .footer-container li a:hover {
+  color: hsl(356, 76%, 33%);
+}
+footer .footer-container h3 {
+  font-family: "Pacifico";
+  font-size: rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+footer .footer-container .footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer-container .social-media-section {
+  display: flex;
+  gap: 1rem;
+}
+footer .footer-container .social-media-section .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+footer .footer-container .social-media-section a {
+  color: #0e0e0e;
+  text-decoration: none;
+}
+footer .footer-container .social-media-section a:hover {
+  color: hsl(356, 76%, 33%);
+}
+footer .footer-container .social-media-section svg {
+  width: 30px;
+  height: 30px;
+  font-size: 2rem;
+}
+footer .credits {
+  font-size: 0.8rem;
+  color: #8b8b8b;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 30px;
+}
+footer .credits a {
+  color: #a93939;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+  section {
+    padding-bottom: 50px;
+  }
+  .hero .grid-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero .grid-container .image-container {
+    min-width: 100;
+    height: 400px;
+  }
+  .hero .grid-container .flex-container {
+    padding: 15%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .hero .grid-container .flex-container h1 {
+    font-size: 4rem;
+  }
+  .hero .grid-container .flex-container p {
+    font-size: 2rem;
+  }
+  .gallery .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+  }
+  .gallery .grid-container .container {
+    max-height: 200px;
+  }
+  .gallery .grid-container .text {
+    max-height: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    order: 2;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 1.6rem;
+  }
+  .gallery .grid-container .text h1 {
+    font-size: 4rem;
+  }
+  .gallery .grid-container .text p {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+  .gallery .grid-container .i1 {
+    order: 0;
+  }
+  .gallery .grid-container .i2 {
+    order: 1;
+    grid-row: 1/2;
+  }
+  .gallery .grid-container .i3 {
+    order: 3;
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .gallery .grid-container .i4 {
+    order: 4;
+    grid-row: 3/4;
+  }
+  .gallery .grid-container .i5 {
+    visibility: hidden;
+  }
+  footer .footer-container {
+    grid-template-columns: 1fr;
+  }
+  footer .footer-container .social-media-section {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
