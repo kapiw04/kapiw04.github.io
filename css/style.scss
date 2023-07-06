@@ -105,9 +105,9 @@ nav {
                 width: 2rem;
                 margin-right: 10px;
                 cursor: pointer;
-
+                transition: all 0.3s ease;
                 &:hover {
-                    width: 3rem;
+                    width: 2.5rem;
                 }
             }
         }
@@ -227,9 +227,10 @@ nav {
             font-family: "Montserrat", sans-serif;
             font-size: 1.2rem;
             text-align: center;
-
             .bold {
                 font-weight: 600;
+                margin-top: 1rem;
+                margin-bottom: 0;
             }
 
             h1 {
@@ -237,7 +238,6 @@ nav {
                 color: $primary-red;
                 font-size: 4rem;
                 font-weight: 600;
-                margin-bottom: 1rem;
             }
         }
     }

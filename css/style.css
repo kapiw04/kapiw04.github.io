@@ -87,9 +87,10 @@ nav .container-fluid .languages svg {
   width: 2rem;
   margin-right: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 nav .container-fluid .languages svg:hover {
-  width: 3rem;
+  width: 2.5rem;
 }
 
 .hero {
@@ -200,13 +201,14 @@ nav .container-fluid .languages svg:hover {
 }
 .gallery .grid-container .text .bold {
   font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 .gallery .grid-container .text h1 {
   font-family: "Pacifico";
   color: hsl(356, 76%, 33%);
   font-size: 4rem;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 
 .contact {
