@@ -46,14 +46,6 @@ nav .container-fluid .navbar-nav {
 nav .container-fluid .navbar-nav .nav-item {
   padding: 0.8rem;
 }
-nav .container-fluid .navbar-nav .nav-item svg {
-  width: 2rem;
-  margin-right: 10px;
-  cursor: pointer;
-}
-nav .container-fluid .navbar-nav .nav-item svg:hover {
-  width: 3rem;
-}
 nav .container-fluid .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", sans-serif;
   color: #363636;
@@ -224,10 +216,11 @@ nav .container-fluid .languages svg:hover {
   color: hsl(356, 76%, 33%);
   font-size: 4rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 .contact .bold {
   font-weight: 600;
+  margin-top: 4rem;
 }
 
 footer {

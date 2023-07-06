@@ -56,15 +56,6 @@ nav {
 
             .nav-item {
                 padding: 0.8rem;
-                svg{
-                    width: 2rem;
-                    margin-right: 10px;
-                    cursor: pointer;
-
-                    &:hover {
-                        width: 3rem;
-                    }
-                }
                 .nav-link {
                     font-family: 'Montserrat', sans-serif;
                     color: #363636;
@@ -256,11 +247,12 @@ nav {
         color: $primary-red;
         font-size: 4rem;
         font-weight: 600;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
     .bold {
         font-weight: 600;
+        margin-top: 4rem;
     }
 }
 
